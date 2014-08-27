@@ -1,0 +1,27 @@
+<div ng-controller="createController" class="left verticalAlignment width98">
+    <div class="wdthfull">
+        <div class="height10">
+            <div class="left width50">
+                <input type="date" placeholder="Select Date..." id="datepicker" data-provide="datepicker" name="" value=""/>
+            </div>
+            <div class="left width50">
+                <input type="" placeholder="Select Time..." class="datetime" name="" value="" required=""/>
+            </div>
+        </div>
+        <div class="height80">
+            <textarea id="todonotes" type="text" placeholder="Write Here..." class="spaceBar"></textarea>
+        </div>
+        <div class="height10">
+            <div class="left width50">
+                <button class="left" ng-click="saveToDo('/index')">
+                    Save
+                </button>
+            </div>
+            <div class="left width50">
+                <button class="right" ng-click="cancelToDo('/index')">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

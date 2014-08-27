@@ -1,0 +1,60 @@
+<div class="left verticalAlignment width98" ng-controller="startController" ng-init="init()">
+    <div id="toggleSwitch">
+        <div class="wdthfull">
+            <div class="width60">
+                <div class="left width50 relativePosition shadow fontSize cursor reflect_{{flagToggle}}"
+                     ng-click="toDoItem()">
+                    <span>ToDos</span>
+                </div>
+                <div class="left width50 relativePosition shadow fontSize cursor reflect_{{!flagToggle}}"
+                     ng-click="finishItem()">
+                    <span>Finish</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear alldotosContainer">
+        <ul class="wdthfull scroll_Y todos_Select" ng-show="flagToggle">
+            <li class="blockSelect height100" ng-repeat="item in Collection.pending">
+                <div class="wdthfull">
+                    <div class="clear height80 relativePosition">
+                        <div class="verticalAlignment width80 fontSize">
+                            {{item.todos}}
+                        </div>
+                    </div>
+                    <div class="clear height20 relativePosition">
+                        <div class="verticalAlignment wdthfull">
+                            <div class="left width30100">
+                                {{item.date}}{{item.time}}
+                            </div>
+                            <div class="right width30100">
+                                {{item.time}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="wdthfull scroll_Y todos_Select" ng-hide="flagToggle">
+            <li class="blockSelect height100" ng-repeat="item in Collection.completed">
+                <div class="wdthfull">
+                    <div class="clear height80 relativePosition">
+                        <div class="verticalAlignment width50 fontSize">
+                            {{item.todos}}
+                        </div>
+                    </div>
+                    <div class="clear height20 relativePosition">
+                        <div class="verticalAlignment wdthfull">
+                            <div class="left width30100">
+                                {{item.date}}{{item.time}}
+                            </div>
+                            <div class="right width30100">
+                                {{item.time}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

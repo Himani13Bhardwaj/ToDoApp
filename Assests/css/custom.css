@@ -1,0 +1,121 @@
+#todoApp {
+    width: 100%;
+    height: 100%;
+    background: url('../Image/background/plain-dark-design-backgrounds.jpg') no-repeat 100% 100% transparent;
+}
+
+#headerToDo {
+    width: 100%;
+    height: 10%;
+    box-shadow: 1px 0px 34px 10px #0F1F4C inset;
+    color: #FFFFFF;
+}
+
+.width10 {
+    width: 10%;
+    height: 100%;
+}
+
+.width80 {
+    width: 80%;
+    height: 100%;
+}
+
+#contentToDo {
+    width: 100%;
+    height: 90%;
+}
+
+.width98 {
+    width: 98%;
+    height: 98%;
+}
+
+#headerToDo .width80 {
+    font-size: 200%;
+}
+
+.verticalAlignment {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#toggleSwitch {
+    width: 100%;
+    height: 10%;
+}
+
+.width60 {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 1px 0px 34px 10px #0F1F4C inset;
+    color: #FFFFFF;
+    outline: 1px solid #0F1F4C;
+}
+
+.alldotosContainer {
+    width: 100%;
+    height: 90%;
+}
+
+.height100 {
+    height: 100px;
+    width: 90%;
+    margin: 1% auto;
+}
+
+.height80 {
+    height: 80%;
+    width: 100%;
+}
+
+.height20 {
+    height: 20%;
+    width: 100%;
+}
+
+.todos_Select li:nth-child(even) {
+    outline: 1px solid #0F1F4C;
+    color: #FFFFFF;
+    list-style: none;
+    box-shadow: 1px 0px 34px 10px #0F1F4C inset;
+}
+
+.todos_Select li:nth-child(odd) {
+    outline: 1px solid #0F1F4C;
+    color: #FFFFFF;
+    list-style: none;
+    box-shadow: 1px 0px 34px 10px #0F1F4C inset;
+}
+
+.spaceBar {
+    margin-top: 1%;
+}
+
+.reflect_true {
+    opacity: 1;
+}
+
+.reflect_false {
+    opacity: 0.5;
+}
+
+.height10 {
+    width: 100%;
+    height: 10%;
+}
+
+.width30100 {
+    width: 30%;
+    height: 100%;
+    font-size: 130%;
+    text-align: center;
+}

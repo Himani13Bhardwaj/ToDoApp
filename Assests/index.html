@@ -1,0 +1,39 @@
+<html ng-app="ToDoApp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>TO DO</title>
+		<link href="css/jquery.ptTimeSelect.css" type="text/css" rel="stylesheet"/>
+		<link href="css/general.css" type="text/css" rel="stylesheet"/>
+		<link href="css/custom.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div id="todoApp">
+			<div id="headerToDo" ng-controller="headerController">
+				<div class="left width10 relativePosition">
+					<span class="cursor"> <img src="Image/icon/Add-icon.png" /> </span>
+				</div>
+				<div class="left width80 relativePosition">
+					<span>To DO Items</span>
+				</div>
+				<div class="left width10 relativePosition">
+					<span class="cursor" ng-click="createNew('/createNew')"><img src="Image/icon/new.png" /></span>
+				</div>
+			</div>
+			<div id="contentToDo" class="clear relativePosition" ng-view>
+
+			</div>
+		</div>
+		<script src="./lib/jquery-min.js" type="text/javascript"></script>
+		<script src="./lib/bootstrap.js" type="text/javascript"></script>
+		<script src="./lib/jquery.ptTimeSelect.js" type="text/javascript"></script>
+        <script src="./lib/angular.min.js" type="text/javascript"></script>
+        <script src="./lib/angular-route.js" type="text/javascript"></script>
+
+        <script src="js/App.js" type="text/javascript"></script>
+
+        <script src="js/controller/HeaderController.js" type="text/javascript"></script>
+        <script src="js/controller/CreateNewController.js" type="text/javascript"></script>
+        <script src="js/controller/StartController.js" type="text/javascript"></script>
+
+    </body>
+</html>
